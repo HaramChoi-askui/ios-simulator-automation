@@ -9,11 +9,11 @@ https://user-images.githubusercontent.com/115455389/215232967-c8f669bf-b3fe-4997
 
 ## Overview
 
-This article demonstrates how to use **askui Library** to automate web searching on iOS Simulator.
+This article demonstrates how to use **askui** to automate web searching on iOS Simulator.
 
 ⚠️Note that, for now, the method shown in this article is **only for iOS Simulator** running on **macOS**.
 
-In fact, **askui Library** has no official support for automation on iOS devices yet. But we can automate the iOS Simulator running on macOS, because **askui Library** performs the automation on the OS level, hence, we can possibly automate everything that is running within the operating system😎
+In fact, **askui** has no official support for automation on iOS devices yet. But we can automate the iOS Simulator running on macOS, because **askui** performs the automation on the OS level, hence, we can possibly automate everything that is running within the operating system😎
 
 
 Taking it into account, let's start by checking the requirements.
@@ -152,7 +152,7 @@ it('should search the keyword', async () => {
 <br>
 
 **3) Remove the Cookie Consent**
-- If you are using a freshly installed Simulator, it's likely that you will be asked to give consent for using cookies on every website.
+- If you are using a freshly installed Simulator, you will likely be asked to give consent for using cookies on every website.
 - This code block examines whether you have faced a pop-up for the cookies, and will click on the **Reject all** button if there is any.
 
 ```ts
@@ -216,6 +216,6 @@ And now we are done with our automation! 🎉
 
 Since the mobile app market gets bigger, app test automation is also becoming more important, especially testing the user interface could be the most critical factor that refines the user experience.
 
-Although the **askui Library** has no official support for automating iOS devices yet, it still gives a huge benefit in automated tests performed on the iOS Simulator. Hang on tight, since there will be official support for iOS devices in the near future.
+Although the **askui** has no official support for automating iOS devices yet, it still gives a huge benefit in automated tests performed on the iOS Simulator. Hang on tight, since there will be official support for iOS devices in the near future.
 
 If you got issues while following this article, feel free to ask for help in our [Discord Community](https://discord.gg/KFYJ5xuyBA)!
