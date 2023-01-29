@@ -40,7 +40,7 @@ Taking it into account, let's start by checking the requirements.
 import { aui } from './helper/jest.setup';
 
 function ascriptTextInput(text: string) {
-    return `osascript -e 'tell application "System Events"' -e 'set txt to "${text}"' -e 'keystroke txt' -e 'end tell'`;
+    return `osascript -e 'tell application "System Events"' -e 'keystroke "${text}"' -e 'end tell'`;
 }
 
 describe('iOS Simulator', () => {
