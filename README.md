@@ -32,17 +32,9 @@ Taking it into account, let's start by checking the requirements.
         ```
 
 
-## 1. Install askui and Prepare the Test Code
+## 1. Prepare the Test Code
 
-- Clone this repository and install askui along with its dependencies:
-```bash
-git clone https://github.com/HaramChoi-askui/ios-simulator-automation
-cd ios-simulator-automation
-npm install
-npx askui init
-```
-
-- Go to `test/helper/my-first-askui-test-suite.test.ts` and change the code as below:
+- After installing askui by following the tutorial in the link above, go to `test/helper/my-first-askui-test-suite.test.ts` and change the code as below:
 
 ```ts
 import { aui } from './helper/jest.setup';
@@ -108,6 +100,11 @@ describe('iOS Simulator', () => {
         }
     });
 });
+```
+
+- After changing the test code, you can use this command to run the code:
+```bash
+npx jest test/my-first-askui-test-suite.test.ts --config ./test/jest.config.ts 
 ```
 
 ## 2. Breaking Down the Test Code
