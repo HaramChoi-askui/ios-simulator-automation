@@ -22,7 +22,7 @@ Taking it into account, let's start by checking the requirements.
 ## Requirements
 
 - **[askui](https://docs.askui.com/docs/general/Getting%20Started/getting-started)**
-    - askui is provided as an **npm package**. So you will need to prepare **Node.Js** and install the required dependencies for askui. See [this tutorial](https://docs.askui.com/docs/general/Getting%20Started/getting-started) if you haven't installed it yet.
+    - askui is provided as an **npm package**. So you will need to prepare **Node.js** and install the required dependencies for askui. See [this tutorial](https://docs.askui.com/docs/general/Getting%20Started/getting-started) if you haven't installed it yet.
 - **[Xcode](https://developer.apple.com/xcode/)**
     - **Xcode** ships together with several latest versions of **iOS Simulator**. So we don't need an extra step for installing the Simulator, but we need to install the **Xcode** which is provided in the App Store.
 - **Xcode Command Line Tools**
