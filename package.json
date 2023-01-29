@@ -1,0 +1,27 @@
+{
+  "name": "ios-simulator-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaramChoi-askui/ios-simulator-automation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HaramChoi-askui/ios-simulator-automation/issues"
+  },
+  "homepage": "https://github.com/HaramChoi-askui/ios-simulator-automation#readme",
+  "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "askui": "^0.7.1",
+    "jest": "^29.4.1",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}

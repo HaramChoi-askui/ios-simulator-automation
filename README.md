@@ -11,9 +11,9 @@ https://user-images.githubusercontent.com/115455389/215232967-c8f669bf-b3fe-4997
 
 This article demonstrates how to use **askui** to automate web searching on iOS Simulator.
 
-⚠️Note that, for now, there is no support for automating real iOS devices. The method shown in this article is **only for iOS Simulator** running on **macOS**. 
+⚠️ Note that, for now, there is no support for automating real iOS devices. The method shown in this article is **only for iOS Simulator** running on **macOS**. 
 
-In fact, **askui** has no official support for automation on iOS devices yet. But we can automate the iOS Simulator running on macOS, because **askui** performs the automation on the OS level, hence, we can possibly automate everything that is running within the operating system😎
+In fact, **askui** has no official support for automation on iOS (including the Simulator) yet. But we can automate the iOS Simulator running on macOS, because **askui** performs the automation on the OS level, hence, we can possibly automate everything that is running within the operating system 😎
 
 
 Taking it into account, let's start by checking the requirements.
@@ -22,7 +22,7 @@ Taking it into account, let's start by checking the requirements.
 ## Requirements
 
 - **[askui](https://docs.askui.com/docs/general/Getting%20Started/getting-started)**
-    - askui is provided as an **npm package**. So you will need to prepare **Node.js** and install the required dependencies for askui. See [this tutorial](https://docs.askui.com/docs/general/Getting%20Started/getting-started) if you haven't installed it yet.
+    - askui is provided as an **npm package**. So you will need to prepare **Node.js** and install the required dependencies for askui. See [this tutorial](https://docs.askui.com/docs/general/Getting%20Started/getting-started) for a more descriptive tutorial for installing askui.
 - **[Xcode](https://developer.apple.com/xcode/)**
     - **Xcode** ships together with several latest versions of **iOS Simulator**. So we don't need an extra step for installing the Simulator, but we need to install the **Xcode** which is provided in the App Store.
 - **Xcode Command Line Tools**
@@ -32,9 +32,17 @@ Taking it into account, let's start by checking the requirements.
         ```
 
 
-## 1. Prepare the askui Test Code
+## 1. Install askui and Prepare the Test Code
 
-- Go to your askui code file and use the following code:
+- Clone this repository and install askui along with its dependencies:
+```bash
+git clone https://github.com/HaramChoi-askui/ios-simulator-automation
+cd ios-simulator-automation
+npm install
+npx askui init
+```
+
+- Go to `test/helper/my-first-askui-test-suite.test.ts` and change the code as below:
 
 ```ts
 import { aui } from './helper/jest.setup';
@@ -100,15 +108,13 @@ describe('iOS Simulator', () => {
         }
     });
 });
-
 ```
 
 ## 2. Breaking Down the Test Code
 
 **1) Launch the iOS Simulator**
 - This test step executes a shell command that launches the **iOS Simulator**.
-- The iOS Simulator must have been installed together with **Xcode**.
-- Note the `waitFor(5000)`. It waits for 5 seconds for the Simulator to fully launch, and can possibly take more than 5 seconds depending on the processing power of your device.
+- Note the `waitFor(5000)`. It waits for 5 seconds for the Simulator to fully launch, but it can possibly take more than 5 seconds depending on the processing power of your device.
 ```ts
 it('should launch the Simulator', async () => {
         console.log("Launching the Simulator");
@@ -210,7 +216,6 @@ it('should remove the cookie popup', async () => {
 
 And now we are done with our automation! 🎉
 
-------
 
 ## Conclusion
 
