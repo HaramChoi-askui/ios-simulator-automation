@@ -121,7 +121,6 @@ it('should launch the Simulator', async () => {
 
 **2) Open the Safari Web Browser and Type the Keyword**
 - Here we click on the small **Search** widget that pops up the **Spotlight** of the iOS. 
-- We type the name of the app we want to launch into the **Spotlight** by using a shell command.
 - Note that there is a small helper function `ascriptTextInput()` at the top of the test code. This function returns a string of an **Apple Script** that automates the keyboard input:
 
 ```ts
@@ -129,6 +128,8 @@ function ascriptTextInput(text: string) {
 return `osascript -e 'tell application "System Events"' -e 'keystroke "${text}"' -e 'end tell'`;
 }
 ```
+- We type the name of the app we want to launch into the **Spotlight** by using a shell command.
+- After launching the web browser, we click on the text "Search or enter website name" which is the placeholder of the search bar.
 
 ```ts
 it('should open safari', async () => {
