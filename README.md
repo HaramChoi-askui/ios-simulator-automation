@@ -11,7 +11,7 @@ https://user-images.githubusercontent.com/115455389/215232967-c8f669bf-b3fe-4997
 
 This article demonstrates how to use **askui** to automate web searching on iOS Simulator.
 
-⚠️Note that, for now, the method shown in this article is **only for iOS Simulator** running on **macOS**.
+⚠️Note that, for now, there is no support for automating real iOS devices. The method shown in this article is **only for iOS Simulator** running on **macOS**. 
 
 In fact, **askui** has no official support for automation on iOS devices yet. But we can automate the iOS Simulator running on macOS, because **askui** performs the automation on the OS level, hence, we can possibly automate everything that is running within the operating system😎
 
@@ -27,9 +27,9 @@ Taking it into account, let's start by checking the requirements.
     - **Xcode** ships together with several latest versions of **iOS Simulator**. So we don't need an extra step for installing the Simulator, but we need to install the **Xcode** which is provided in the App Store.
 - **Xcode Command Line Tools**
     - If you have **Xcode** installed, but not the **Xcode Command Line Tools**, run this command in the terminal to install it:
-    ```bash
-    xcode-select --install
-    ```
+        ```bash
+        xcode-select --install
+        ```
 
 
 ## 1. Prepare the askui Test Code
